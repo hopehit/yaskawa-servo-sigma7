@@ -1,0 +1,90 @@
+<project name="Project" processor="yecore" lib="C:/IP_Designer/lib">
+    <active cfg="Release"/>
+    <file type="c" name="MprgSgdv.c" path="main"/>
+    <file type="c" name="Global.c" path="main"/>
+    <issinit>iss profiling storage_access_history_logging Off
+iss registers isvisible {} notvisible {}
+iss storages isvisible {} notvisible {}
+dwarf2output add {AxisHdl variable {struct MICRO_AXIS_HANDLE %VAR[2]} {{102 0 dir 0 0 0 0 -2 0 0}}} -vacc {{} {} {0 {} {AxisInfo {} {} AcrV {} {} StsFlg {} {} VcmpV {} {} SinTbl {} {} AdStop {} {} AdinV {} {} IntAdP {} {Kcu {} {} Kcv {} {} Kmod {} {} Kvv {} {} Kc {} {} Ld {} {} Lq {} {} Mag {} {} KdP {} {} KqP {} {} KdI {} {} KqI {} {} VdLim {} {} VqLim {} {} KvvIn {} {} OnDelayLvl {} {} Tfil {} {} Vmax {} {} OnDelayComp {} {} CtrlSw {} {} CrFreq {} {} Kf11 {} {} Kf12 {} {} Kf13 {} {} Kf14 {} {} Kf21 {} {} Kf22 {} {} Kf23 {} {} Kf24 {} {} Kf31 {} {} Kf32 {} {} Kf33 {} {} Kf34 {} {} TLpf {} {} TLpf2 {} {} MotResist {} {} OnDelaySlope {} {} L_dIdt {} {} FccRst {} {} Dummy {} {}} IntAdV {} {} DobsP {} {} DobsV {} {} PhaseV {} {} EncIfV {} {} DivPlsV {} {} WeakFV {} {} PwmV {} {} Dummy {} {} SvIpRegR {} {} SvIpRegW {} {}} 1 {} {}}} -varloccheck -from_init
+dwarf2output add {AxisNum variable {__slong %VAR} {{102 1288 dir 0 0 0 0 -2 0 0}}} -vacc {{} {} {}} -varloccheck -from_init
+iss memory::DM start_field 0 show_ascii 0 data_format Hexadecimal hex_addr 1
+iss memory::DMl start_field 0
+iss memory::PFREG start_field 0
+iss memory::PM start_field 0
+iss memory::PREGe start_field 0
+iss memory::PREGl start_field 0
+iss memory::PREGo start_field 0
+iss memory::TROM start_field 0</issinit>
+    <option id="backend.amnesia.dephaz" value="on"/>
+    <option id="backend.amnesia.redhaz" value="on"/>
+    <option id="backend.amnesia.rls" value="on"/>
+    <option id="backend.cosel.larger" value="on"/>
+    <option id="backend.cosel.match" value="high"/>
+    <option id="backend.cosel.status" value="off"/>
+    <option id="backend.ipo" value="on"/>
+    <option id="backend.mist1.schedp" value="on"/>
+    <option id="backend.mist2.delayslots" value="size"/>
+    <option id="backend.mist2.hwdoreg" value="on"/>
+    <option id="backend.showcolor.greedy" value="on"/>
+    <option id="bridge.cfg" value="include/yecore_default.bcf"/>
+    <option id="cpp.include" value="include main {../../../IP Designer/lib}" inherit="1"/>
+    <option id="darts.ass.wdeps" value="on"/>
+    <option id="noodle.debug.sinl" value="on"/>
+    <option id="noodle.optim.nocb" value="on"/>
+    <option id="project.name" value="MpgDebug"/>
+    <option id="project.type" value="exe"/>
+    <option id="simrun.jtfreq" value="15"/>
+    <option id="simrun.jtxargs" value="-v" inherit="0"/>
+    <selectsim type="ISSCA" exe="yecore"/>
+    <srvinit>hex_addr 0 hex_asm 0 show_anno 1 show_instr 1 show_labels 0</srvinit>
+    <zlayout>
+        <perspective type="iss">
+            <HorPaneNode>
+                <VerPaneNode size="427">
+                    <ViewBookNode size="3">
+                        <window name="::ProjectView" visible="0" select="0"/>
+                        <window name="::MicView" visible="1" select="1"/>
+                    </ViewBookNode>
+                    <ViewBookNode size="2">
+                        <window name="::StatsView" visible="1" select="0"/>
+                        <window name="::RegisterView" visible="1" select="1"/>
+                        <window name="::StorageView" visible="0" select="0"/>
+                        <window name="::PipelineView" visible="0" select="0"/>
+                    </ViewBookNode>
+                </VerPaneNode>
+                <VerPaneNode size="966">
+                    <EditorBookNode size="373">
+                        <window name="::editor5::pane" visible="1" select="1"/>
+                    </EditorBookNode>
+                    <ViewBookNode size="297">
+                        <window name="::HostedIOView" visible="1" select="0"/>
+                        <window name="::FileIOView" visible="0" select="0"/>
+                        <window name="::LocalVarView" visible="1" select="0"/>
+                        <window name="::BreakWatchView" visible="0" select="0"/>
+                        <window name="::ProfilingView" visible="0" select="0"/>
+                        <window name="::DMVecView" visible="1" select="0"/>
+                        <window name="::ConsoleView" visible="1" select="0"/>
+                        <window name="::VarInfoView" visible="1" select="1"/>
+                    </ViewBookNode>
+                </VerPaneNode>
+            </HorPaneNode>
+        </perspective>
+        <perspective type="dev">
+            <VerPaneNode>
+                <HorPaneNode size="512">
+                    <ViewBookNode size="398">
+                        <window name="::ProjectView" visible="1" select="1"/>
+                        <window name="::SrcRefView" visible="0" select="0"/>
+                    </ViewBookNode>
+                    <EditorBookNode size="876">
+                        <window name="::editor5::pane" visible="1" select="1"/>
+                    </EditorBookNode>
+                </HorPaneNode>
+                <ViewBookNode size="232">
+                    <window name="::ConsoleView" visible="1" select="1"/>
+                </ViewBookNode>
+            </VerPaneNode>
+        </perspective>
+        <editor id="::editor5" file="main/MprgSgdv.c" top="13.0" cursor="40.22" foldmap="1" linemap="0"/>
+    </zlayout>
+</project>

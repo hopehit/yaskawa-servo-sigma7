@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="MpgDebug">
+</Property><Property Name="ソリューション ファイル" Value="C:\msv\ScanI_C\MpgDebug\MpgDebug.sln">
+</Property><Property Name="ユーザー オプション ファイル" Value="C:\msv\ScanI_C\MpgDebug\MpgDebug.suo">
+</Property><Property Name="Date" Value="2012年8月6日">
+</Property><Property Name="Time" Value="11:44">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="MpgDebug.sln" Description="ファイルは正常に C:\msv\ScanI_C\MpgDebug\MpgDebug.sln.old としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="" Source="MpgDebug.suo" Description="ファイルは正常に C:\msv\ScanI_C\MpgDebug\MpgDebug.suo.old としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="MpgDebug" Source="MpgDebug.vcproj" Description="Converting project file 'C:\msv\ScanI_C\MpgDebug\MpgDebug.vcproj'.">
+</Event><Event ErrorLevel="1" Project="MpgDebug" Source="MpgDebug.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="1" Project="MpgDebug" Source="MpgDebug.vcproj" Description="MSB8012: $(TargetPath) ('C:\msv\ScanI_C\MpgDebug\.\Release\MpgDebug.exe') does not match the Linker's OutputFile property value '.\Release/MpgDebug.exe' ('C:\msv\ScanI_C\MpgDebug\Release/MpgDebug.exe') in project configuration 'Release|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Link.OutputFile).">
+</Event><Event ErrorLevel="1" Project="MpgDebug" Source="MpgDebug.vcproj" Description="MSB8012: $(TargetPath) ('C:\msv\ScanI_C\MpgDebug\.\Debug\MpgDebug.exe') does not match the Linker's OutputFile property value '.\Debug/MpgDebug.exe' ('C:\msv\ScanI_C\MpgDebug\Debug/MpgDebug.exe') in project configuration 'Debug|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Link.OutputFile).">
+</Event><Event ErrorLevel="0" Project="MpgDebug" Source="MpgDebug.vcproj" Description="Done converting to new project file 'C:\msv\ScanI_C\MpgDebug\MpgDebug.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="MpgDebug" Source="MpgDebug.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="MpgDebug.sln" Description="ソリューションは正常に変換されました">
+</Event><Event ErrorLevel="3" Project="" Source="MpgDebug.sln" Description="Converted">
+</Event></UpgradeLog>

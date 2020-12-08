@@ -1,0 +1,89 @@
+<project name="Project" processor="yecore" lib="C:/IP_Designer/lib">
+    <active cfg="Release"/>
+    <file type="c" name="MprgSgdv.c" path="main"/>
+    <file type="c" name="Global.c" path="main"/>
+    <file type="c" name="MpgTstMain.c" path=""/>
+    <issinit>iss profiling storage_access_history_logging Off
+iss registers isvisible {} notvisible {}
+iss storages isvisible {} notvisible {}
+iss varinfo::statics hex_addr 1 hex_data 1
+dwarf2output add {AxisHdl variable {struct MICRO_AXIS_HANDLE %VAR[2]} {{11 88 dir 0 0 0 0 -2 0 0}}} -vacc {{} {} {0 {} {AcrV {} {IdIntgl {} {} IqIntgl {} {} VdFil {} {} VqFil {} {}} StsFlg {} {BbSetW {} {} FltStsW {} {} CtrlStsRW {} {} CNTSTS {} {} FccStsMon {} {} IntglFlg {} {}} VcmpV {} {} SinTbl {} {} AdStop {} {} AdinV {} {} IntAdP {} {} IntAdV {} {IuOffset {} {} IvOffset {} {} IuInData {} {} IvInData {} {} IdInData {} {} IqInData {} {} CrFreqW {} {} IuOut {} {} IvOut {} {} V1 {} {} Vcent {} {} IqOut1Lpf {} {} IqOut2Lpf {} {} IqRef {} {} TLimP {} {} TLimM {} {} IqMon {} {} IdDataP {} {} IqDataP {} {} KEangle {} {} Dummy1 {} {} IdLfil {} {} IqLfil {} {} IqDistIn {} {} IqDist {} {} IqMonFil {} {} IqOfRef {} {} IqOut1L {} {} IqOut1PL {} {} IqOut1PPL {} {} IqIn1PL {} {} IqIn1PPL {} {} IQO1 {} {} Dummy2 {} {} IqOut1BufL {} {} IqOut2L {} {} IqOut2PL {} {} IqOut2PPL {} {} IqIn2PL {} {} IqIn2PPL {} {} IQO2 {} {} Dummy3 {} {} IqOut2BufL {} {} IqOut3L {} {} IqOut3PL {} {} IqOut3PPL {} {} IqIn3PL {} {} IqIn3PPL {} {} IqOut3 {} {} Dummy4 {} {} IqOut3BufL {} {}} IntAdwk {} {} DobsP {} {} DobsV {} {} PhaseV {} {PHAL {} {} PhaseH {} {} PhaseIp {} {} PhaseIpF {} {} PhaseIpIn {} {} PhaseIpFIn {} {}} EncIfV {} {} DivPlsV {} {} IEncWk {} {} IHostWk {} {} IPfbwk {} {} WeakFV {} {WfKpVLIn {} {} WfKpVHIn {} {} WfKiVLIn {} {} WfKiVHIn {} {} WfV1MaxIn {} {} WfIdRefLimIn {} {} WfIntegLim {} {} IdOut {} {} IqOut {} {} Vel {} {} WfKpV {} {} WfKiV {} {} WfV1Max {} {} WfIdRefLim {} {} WfVqMax {} {} Dummy {} {} WfIntgl {} {} WfVdRef {} {} WfVqRef {} {}} Dummy {} {} SvIpRegR {} {} SvIpRegW {} {}} 1 {} {}}} -varloccheck -from_init
+dwarf2output add {ADOutTbl variable {struct ADOUT %VAR[5]} {{11 1436 dir 0 0 0 0 -2 0 0}}} -vacc {{} {} {}} -varloccheck -from_init
+dwarf2output add {i variable {__slong %VAR} {{21 2 reg 0 1 2458 0 2460 -5 0} {11 1386 dir 0 1 2458 0 2474 -5 0} {21 2 reg 0 1 2468 0 2474 -5 0}}} -vacc {{} {} {}} -varloccheck -from_init
+dwarf2output add {TrqRefIn variable {struct TRQREFIN %VAR[5]} {{11 1394 dir 0 0 0 0 -2 0 0}}} -vacc {{} {} {0 {} {PHA {} {} PHAIP {} {} IDO {} {} IQO {} {} VEL {} {} KVV {} {} IRIU {} {} IRIV {} {}} 1 {} {PHA {} {} PHAIP {} {} IDO {} {} IQO {} {} VEL {} {} KVV {} {} IRIU {} {} IRIV {} {}} 2 {} {PHA {} {} PHAIP {} {} IDO {} {} IQO {} {} VEL {} {} KVV {} {} IRIU {} {} IRIV {} {}} 3 {} {PHA {} {} PHAIP {} {} IDO {} {} IQO {} {} VEL {} {} KVV {} {} IRIU {} {} IRIV {} {}} 4 {} {}}} -varloccheck -from_init
+dwarf2output add {AxisRscT variable {struct MICRO_AXIS_HANDLE DM* %VAR} {{100 1434 dir 0 0 0 0 -2 0 0}}} -vacc {{} {} {* {} {AcrV {} {} StsFlg {} {} VcmpV {} {} SinTbl {} {} AdStop {} {} AdinV {} {} IntAdP {} {Kcu {} {} Kcv {} {} Kmod {} {} Kvv {} {} Kc {} {} Ld {} {} Lq {} {} Mag {} {} KdP {} {} KqP {} {} KdI {} {} KqI {} {} VdLim {} {} VqLim {} {} KvvIn {} {} OnDelayLvl {} {} Tfil {} {} Vmax {} {} OnDelayComp {} {} CtrlSw {} {} CrFreq {} {} Kf11 {} {} Kf12 {} {} Kf13 {} {} Kf14 {} {} Kf21 {} {} Kf22 {} {} Kf23 {} {} Kf24 {} {} Kf31 {} {} Kf32 {} {} Kf33 {} {} Kf34 {} {} TLpf {} {} TLpf2 {} {} MotResist {} {} OnDelaySlope {} {} L_dIdt {} {} FccRst {} {}} IntAdV {} {IuOffset {} {} IvOffset {} {} IuInData {} {} IvInData {} {} IdInData {} {} IqInData {} {} CrFreqW {} {} IuOut {} {} IvOut {} {} V1 {} {} Vcent {} {} IqOut1Lpf {} {} IqOut2Lpf {} {} IqRef {} {} TLimP {} {} TLimM {} {} IqMon {} {} IdDataP {} {} IqDataP {} {} KEangle {} {} Dummy1 {} {} IdLfil {} {} IqLfil {} {} IqDistIn {} {} IqDist {} {} IqMonFil {} {} IqOfRef {} {} IqOut1L {} {} IqOut1PL {} {} IqOut1PPL {} {} IqIn1PL {} {} IqIn1PPL {} {} IQO1 {} {} Dummy2 {} {} IqOut1BufL {} {} IqOut2L {} {} IqOut2PL {} {} IqOut2PPL {} {} IqIn2PL {} {} IqIn2PPL {} {} IQO2 {} {} Dummy3 {} {} IqOut2BufL {} {} IqOut3L {} {} IqOut3PL {} {} IqOut3PPL {} {} IqIn3PL {} {} IqIn3PPL {} {} IqOut3 {} {} Dummy4 {} {} IqOut3BufL {} {}} IntAdwk {} {swk0 {} {} swk1 {} {} swk2 {} {} swk3 {} {} swk4 {} {} swk5 {} {} swk6 {} {} swk7 {} {} swk8 {} {} Dummy {} {} pCtbl {} {} lwk0 {} {} lwk1 {} {} lwk2 {} {} lwk4 {} {} lwk6 {} {} lwk8 {} {} sqrtwk {} {Low {} {} High {} {} uswk0 {} {} uswk1 {} {} uswk3 {} {} uswk4 {} {} uswk5 {} {} uswk6 {} {} ulwk0 {} {} ulwk2 {} {} tmp0 {} {}}} DobsP {} {} DobsV {} {} PhaseV {} {PHAL {} {} PhaseH {} {} PhaseIp {} {} PhaseIpF {} {} PhaseIpIn {} {} PhaseIpFIn {} {}} EncIfV {} {} DivPlsV {} {} IEncWk {} {} IHostWk {} {} IPfbwk {} {} WeakFV {} {WfKpVLIn {} {} WfKpVHIn {} {} WfKiVLIn {} {} WfKiVHIn {} {} WfV1MaxIn {} {} WfIdRefLimIn {} {} WfIntegLim {} {} IdOut {} {} IqOut {} {} Vel {} {} WfKpV {} {} WfKiV {} {} WfV1Max {} {} WfIdRefLim {} {} WfVqMax {} {} Dummy {} {} WfIntgl {} {} WfVdRef {} {} WfVqRef {} {}} Dummy {} {} SvIpRegR {} {* {} {MACCDLL {} {} MACCDLH {} {} MACCDHL {} {} MACCDHH {} {} SACCDLL {} {} SACCDLH {} {} SACCDHL {} {} SACCDHH {} {} MODL {} {} MODH {} {} IREG_S {} {} IREG_D {} {} Dummy1 {} {0 {} {} 1 {} {} 2 {} {} 3 {} {} 4 {} {} 5 {} {}} INTLVR {} {} FCTRL {} {} FCC {} {} FTRP {} {} Dummy2 {} {0 {} {} 1 {} {} 2 {} {} 3 {} {} 4 {} {} 5 {} {} 6 {} {} 7 {} {} 8 {} {} 9 {} {} ... {} {}} EncFlag {} {} BaseTim {} {} LastBaseTim {} {} HenkaItiTim {} {} SPGRXF {} {} Dummy3 {} {} MotPos0_L {} {} MotPos0_H {} {} MotPos1_L {} {} MotPos1_H {} {} RcvPos0_L {} {} RcvPos0_H {} {} RcvPos1_L {} {} RcvPos1_H {} {} SPGD_1 {} {} SPGD_2 {} {} SPGD_3 {} {} SPGD_4 {} {} SPGD_5 {} {} RxPos0_LL {} {} RxPos0_LH {} {} RxPos0_H {} {} RxPos1_LL {} {} RxPos1_LH {} {} RxPos1_H {} {} Dummy4 {} {} AVU {} {} Dummy5 {} {} NCTCTM {} {} NCTCFB {} {} NCTCCD {} {} NCTCTP {} {} Dummy6 {} {} DBSTS {} {} DBU1 {} {} DBV1 {} {} DBW1 {} {} ACMC4 {} {} ACMC5 {} {} ACMC6 {} {} ACMC7 {} {} Dummy7 {} {} FCCST {} {} FCCFZRNL {} {} FCLDL {} {} Dummy8 {} {} SADATA {} {} SAADATA {} {} SBDATA {} {} SBBDATA {} {} Dummy9 {} {} FBZRND {} {} FBCLT {} {} FBPUD {} {} FBPCD {} {} TCNT {} {} T1LT {} {} T2LT {} {} T3LT {} {} IuAD {} {} IvAD {} {} CRFRQI {} {} Dummy10 {} {} HSUR0 {} {} HSUR1 {} {} HSUR2 {} {} HSUR3 {} {} CTSTR {} {} INT1SET {} {} FLTSTAT {} {} FBCSET {} {} FCCDAT {} {} YTCOUT {} {} Dummy11 {} {} OPCCLM {} {} Dummy12 {} {} OPCLT {} {} Dummy13 {} {} SRPG1RD2 {} {} SRPG1RD3 {} {} SRPG1RD4 {} {} SRPG1RD5 {} {} SRPG1RD6 {} {} SRPG1RD7 {} {} Dummy14 {} {} SRPG0RD2 {} {} SRPG0RD3 {} {} SRPG0RD4 {} {} SRPG0RD5 {} {} SRPG0RD6 {} {} SRPG0RD7 {} {}}} SvIpRegW {} {* {} {}}}}} -varloccheck -from_init
+dwarf2output add {i parameter {__sint %VAR} {{93 0 reg 0 1 2566 -3 2572 4 0}}} -vacc {{} {} {}} -varloccheck -from_init
+iss memory::DM start_field 0 show_ascii 0 data_format Hexadecimal hex_addr 1
+iss memory::PFREG start_field 0
+iss memory::PM start_field 0
+iss memory::PREG nbr_values_on_line 8 start_field 1384 show_ascii 0 data_format Hexadecimal hex_addr 1
+iss memory::PREGe start_field 0
+iss memory::PREGl start_field 0
+iss memory::PREGo start_field 0
+iss memory::TROM start_field 0</issinit>
+    <option id="bridge.cfg" value="include/yecore_default.bcf"/>
+    <option id="cpp.define" value="IPD_SIM" inherit="1"/>
+    <option id="cpp.include" value="include main {../../../IP Designer/lib}" inherit="1"/>
+    <option id="project.name" value="MpgDebug"/>
+    <option id="project.type" value="exe"/>
+    <option id="simrun.issca" value="../../../IP_Designer/iss/yecore" inherit="0"/>
+    <selectsim type="ISSCA" exe="../../../IP_Designer/iss/yecore"/>
+    <srvinit>hex_addr 0 hex_asm 0 show_anno 0 show_instr 1 show_labels 0</srvinit>
+    <zlayout>
+        <perspective type="iss">
+            <HorPaneNode>
+                <VerPaneNode size="523">
+                    <ViewBookNode size="3">
+                        <window name="::ProjectView" visible="0" select="0"/>
+                        <window name="::MicView" visible="1" select="1"/>
+                    </ViewBookNode>
+                    <ViewBookNode size="2">
+                        <window name="::StatsView" visible="1" select="0"/>
+                        <window name="::VarInfoView" visible="1" select="1"/>
+                        <window name="::RegisterView" visible="1" select="0"/>
+                        <window name="::StorageView" visible="0" select="0"/>
+                        <window name="::PipelineView" visible="0" select="0"/>
+                    </ViewBookNode>
+                </VerPaneNode>
+                <VerPaneNode size="752">
+                    <EditorBookNode size="373">
+                        <window name="::editor4::pane" visible="1" select="0"/>
+                        <window name="::editor6::pane" visible="1" select="0"/>
+                        <window name="::editor1::pane" visible="1" select="1"/>
+                    </EditorBookNode>
+                    <ViewBookNode size="297">
+                        <window name="::HostedIOView" visible="1" select="0"/>
+                        <window name="::FileIOView" visible="0" select="0"/>
+                        <window name="::LocalVarView" visible="1" select="0"/>
+                        <window name="::BreakWatchView" visible="0" select="0"/>
+                        <window name="::ProfilingView" visible="0" select="0"/>
+                        <window name="::DMVecView" visible="1" select="1"/>
+                        <window name="::PREGVecView" visible="1" select="0"/>
+                        <window name="::ConsoleView" visible="1" select="0"/>
+                    </ViewBookNode>
+                </VerPaneNode>
+            </HorPaneNode>
+        </perspective>
+        <perspective type="dev">
+            <VerPaneNode>
+                <HorPaneNode size="286">
+                    <ViewBookNode size="444">
+                        <window name="::ProjectView" visible="1" select="1"/>
+                        <window name="::SrcRefView" visible="0" select="0"/>
+                    </ViewBookNode>
+                    <EditorBookNode size="813">
+                        <window name="::editor4::pane" visible="1" select="1"/>
+                        <window name="::editor6::pane" visible="1" select="0"/>
+                        <window name="::editor1::pane" visible="1" select="0"/>
+                    </EditorBookNode>
+                </HorPaneNode>
+                <ViewBookNode size="238">
+                    <window name="::ConsoleView" visible="1" select="1"/>
+                </ViewBookNode>
+            </VerPaneNode>
+        </perspective>
+        <editor id="::editor1" file="MpgTstMain.c" top="129.0" cursor="140.23" foldmap="1" linemap="0"/>
+        <editor id="::editor4" file="main/MprgSgdv.c" top="1387.0" cursor="1379.4" foldmap="1" linemap="0"/>
+        <editor id="::editor6" file="include/IxInst.h" top="213.0" cursor="1.0" foldmap="1" linemap="0"/>
+    </zlayout>
+</project>

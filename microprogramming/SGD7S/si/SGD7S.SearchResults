@@ -1,0 +1,3 @@
+---- Sin1.s Matches (3 in 1 files) ----
+MprgSgd7.c (G:\学习资料\运动控制\伺服驱动器\motor\伺服与变频器压缩集合\20安川Σ7\microprogramming\SGD7S\main) line 1010 : 		IxTblSin16( AxisRscI->SinTbl.Sin1.s[0], lwk4.s[0] );	/* sin1.sr = SinTbl[ lwk4.s[0] ]	*/
+MprgSgd7.c (G:\学习资料\运动控制\伺服驱动器\motor\伺服与变频器压缩集合\20安川Σ7\microprogramming\SGD7S\main) line 1027 : 		AxisRscI->SinTbl.Sin1.l = AxisRscI->SinTbl.Sin1.s[0];	/* 16bit→32bit(符号付)				*/
